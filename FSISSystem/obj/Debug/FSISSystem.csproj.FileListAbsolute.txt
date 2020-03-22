@@ -1,0 +1,5 @@
+C:\Users\Timot\Documents\Programming\NAIT\CPSC1517\ASP.NET-Web-App-Template\FSISSystem\bin\Debug\FSISSystem.dll
+C:\Users\Timot\Documents\Programming\NAIT\CPSC1517\ASP.NET-Web-App-Template\FSISSystem\bin\Debug\FSISSystem.pdb
+C:\Users\Timot\Documents\Programming\NAIT\CPSC1517\ASP.NET-Web-App-Template\FSISSystem\obj\Debug\FSISSystem.csprojAssemblyReference.cache
+C:\Users\Timot\Documents\Programming\NAIT\CPSC1517\ASP.NET-Web-App-Template\FSISSystem\obj\Debug\FSISSystem.dll
+C:\Users\Timot\Documents\Programming\NAIT\CPSC1517\ASP.NET-Web-App-Template\FSISSystem\obj\Debug\FSISSystem.pdb
