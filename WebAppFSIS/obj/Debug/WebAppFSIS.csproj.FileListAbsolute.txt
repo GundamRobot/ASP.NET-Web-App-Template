@@ -146,3 +146,8 @@ C:\Users\Timot\Documents\Programming\NAIT\CPSC1517\ASP.NET-Web-App-Template\WebA
 C:\Users\Timot\Documents\Programming\NAIT\CPSC1517\ASP.NET-Web-App-Template\WebAppFSIS\obj\Debug\WebAppFSIS.csproj.CopyComplete
 C:\Users\Timot\Documents\Programming\NAIT\CPSC1517\ASP.NET-Web-App-Template\WebAppFSIS\obj\Debug\WebAppFSIS.dll
 C:\Users\Timot\Documents\Programming\NAIT\CPSC1517\ASP.NET-Web-App-Template\WebAppFSIS\obj\Debug\WebAppFSIS.pdb
+C:\Users\Timot\Documents\Programming\NAIT\CPSC1517\ASP.NET-Web-App-Template\WebAppFSIS\bin\EntityFramework.dll
+C:\Users\Timot\Documents\Programming\NAIT\CPSC1517\ASP.NET-Web-App-Template\WebAppFSIS\bin\EntityFramework.SqlServer.dll
+C:\Users\Timot\Documents\Programming\NAIT\CPSC1517\ASP.NET-Web-App-Template\WebAppFSIS\bin\FSISSystem.dll.config
+C:\Users\Timot\Documents\Programming\NAIT\CPSC1517\ASP.NET-Web-App-Template\WebAppFSIS\bin\EntityFramework.xml
+C:\Users\Timot\Documents\Programming\NAIT\CPSC1517\ASP.NET-Web-App-Template\WebAppFSIS\bin\EntityFramework.SqlServer.xml
