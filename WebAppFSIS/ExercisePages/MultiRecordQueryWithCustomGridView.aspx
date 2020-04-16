@@ -48,6 +48,11 @@
         <div class="row table-responsive-lg">
             <asp:GridView runat="server" ID="PlayerList" AutoGenerateColumns="false" OnSelectedIndexChanged="PlayerList_SelectedIndexChanged" DataSourceID="PlayerListODS" AllowPaging="true" PageSize="5" CssClass="table table-striped table-hover" GridLines="None" BorderStyle="None">               
                 <Columns>
+                    <asp:TemplateField HeaderText="ID">
+                        <ItemTemplate>
+                            <asp:Label runat="server" ID="PlayerID" Text='<%# Eval("PlayerID") %>'></asp:Label>
+                        </ItemTemplate>
+                    </asp:TemplateField>
                     <asp:TemplateField HeaderText="Name">
                         <ItemTemplate>
                             <asp:Label runat="server" ID="FirstName" Text='<%# Eval("FullName") %>'></asp:Label>
@@ -68,6 +73,7 @@
                             <asp:Label runat="server" ID="MedicalAlertDetails" Text='<%# Eval("MedicalAlertDetails") %>'></asp:Label>
                         </ItemTemplate>
                     </asp:TemplateField>
+                    <asp:CommandField SelectText="Edit" ShowSelectButton="True" ButtonType="Button" CausesValidation="false"></asp:CommandField>
                 </Columns>
 
                 <EmptyDataTemplate>
@@ -79,12 +85,12 @@
             </asp:GridView>
         </div>
 
-        <%-- Object Data Sources: --%>
-        <asp:ObjectDataSource runat="server" ID="TeamListODS" SelectMethod="Team_List" TypeName="FSISSystem.BLL.TeamController"></asp:ObjectDataSource>
-        <asp:ObjectDataSource runat="server" ID="PlayerListODS" SelectMethod="Players_FindByTeam" TypeName="FSISSystem.BLL.PlayerController">
-            <SelectParameters>
-                <asp:ControlParameter ControlID="TeamList" PropertyName="SelectedValue" DefaultValue="0" Name="teamid" Type="Int32"/>
-            </SelectParameters>
-        </asp:ObjectDataSource>
     </div>
+    <%-- Object Data Sources: --%>
+    <asp:ObjectDataSource runat="server" ID="TeamListODS" SelectMethod="Team_List" TypeName="FSISSystem.BLL.TeamController"></asp:ObjectDataSource>
+    <asp:ObjectDataSource runat="server" ID="PlayerListODS" SelectMethod="Players_FindByTeam" TypeName="FSISSystem.BLL.PlayerController">
+        <SelectParameters>
+            <asp:ControlParameter ControlID="TeamList" PropertyName="SelectedValue" DefaultValue="0" Name="teamid" Type="Int32"/>
+        </SelectParameters>
+    </asp:ObjectDataSource>
 </asp:Content>

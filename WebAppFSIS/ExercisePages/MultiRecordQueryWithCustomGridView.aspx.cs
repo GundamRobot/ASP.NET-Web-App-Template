@@ -55,6 +55,13 @@ namespace WebAppFSIS.ExercisePages
         protected void PlayerList_SelectedIndexChanged(object sender, EventArgs e)
         {
             GridViewRow agvrow = PlayerList.Rows[PlayerList.SelectedIndex];
+            string playerid = (agvrow.FindControl("PlayerID") as Label).Text;
+            Response.Redirect("CRUD.aspx?pid=" + playerid);
+        }
+
+        protected void ViewEditPage(object sender, EventArgs e)
+        {
+            GridViewRow agvrow = PlayerList.Rows[PlayerList.SelectedIndex];
         }
     }
 }

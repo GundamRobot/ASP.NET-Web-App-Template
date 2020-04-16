@@ -20,16 +20,16 @@ namespace FSISSystem.ENTITIES
         public string LastName { get; set; }
         public int Age { get; set; }
 
-        private char gender;
-        //public char Gender { get; set; }
-        public char Gender
-        {
-            get { return gender; }
-            set
-            {
-                gender = Char.ToUpper(value);
-            }
-        }
+        //private char gender;
+        public string Gender { get; set; }
+        //public char Gender
+        //{
+        //    get { return gender; }
+        //    set
+        //    {
+        //        gender = Char.ToUpper(value);
+        //    }
+        //}
         public string AlbertaHealthCareNumber { get; set; }
 
         //private string medicalAlertDetails;
