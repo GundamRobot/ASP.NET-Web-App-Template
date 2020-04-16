@@ -75,6 +75,11 @@
                                             style="color:black" runat="server">
                                             MultiRecordQueryWithCustomGridView
                                     </a>
+                                    <a class="dropdown-item"
+                                            href="~/ExercisePages/CRUD.aspx"
+                                            style="color:black" runat="server">
+                                            CRUD
+                                    </a>
                                 </div>
                             </li>
                             <li class="nav-item">
