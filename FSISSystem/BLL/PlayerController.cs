@@ -40,14 +40,40 @@ namespace FSISSystem.BLL
             }
         }
 
-        public int Player_Add(Player item)
+        public int Player_Add(Player player)
         {
             using (var context = new FSISContext())
             {
-                context.Players.Add(item);
+                context.Players.Add(player);
                 context.SaveChanges();
 
-                return item.PlayerID;
+                return player.PlayerID;
+            }
+        }
+
+        public int Player_Update(Player player)
+        {
+            using (var context = new FSISContext())
+            {
+                context.Entry(player).State = System.Data.Entity.EntityState.Modified;
+                
+                return context.SaveChanges();
+            }
+        }
+
+        public int Delete(int playerid)
+        {
+            using (var context = new FSISContext())
+            {
+                var existingPlayer = context.Players.Find(playerid);
+
+                if (existingPlayer == null)
+                {
+                    throw new Exception("Player has been removed from the database");
+                }
+                context.Players.Remove(existingPlayer);
+                
+                return context.SaveChanges();
             }
         }
     }
